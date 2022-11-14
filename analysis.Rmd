@@ -1,0 +1,61 @@
+---
+title: "Vliv virtuality na výkonnost týmu"
+author: "Michal Lauer"
+date: "`r format(Sys.time(), format = '%d. %m. %Y')`"
+output:
+  html_document:
+    theme: paper
+    css: "assets/css/style.css"
+    df_print: kable
+    highlight: zenburn
+    code_folding: hide
+	toc: true
+    toc_float: true
+editor_options:
+  chunk_output_type: console
+knit: (function(inputFile, encoding) {
+  rmarkdown::render(inputFile,
+                    encoding = encoding,
+                    output_dir = "output/")})
+---
+```{r include=F}
+# Environment preparation
+cat('\f')
+rm(list = ls())
+# Clear output
+if (dir.exists("output") & !isTRUE(getOption('knitr.in.progress')))
+  unlink("output", recursive = T)
+# RMarkdown requirements for renv
+require("rmarkdown")
+require("yaml")
+# knitr setting
+knitr::opts_chunk$set(fig.align = "center",
+                      fig.path = "output/imgs/",
+                      fig.width = 12,
+                      fig.height = 7,
+                      dev = c("svg", "png"))
+# gtsummary theme
+gtsummary::set_gtsummary_theme(list(
+  "style_number-arg:big.mark" = " "
+))
+```
+
+# Preface
+
+...
+
+# Introduction
+
+...
+
+```{r include=F}
+# TODO: Prezentace
+```
+
+# Libraries
+
+This block loads all libraries.
+
+```{r libs, message=F, warning=F}
+
+```
