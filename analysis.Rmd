@@ -11,7 +11,9 @@ output:
     code_folding: hide
 	toc: true
     toc_float: true
-editor_options:
+bibliography: "bib/references.bib"
+csl: "bib/iso690-author-date-cs.csl"
+editor_options: 
   chunk_output_type: console
 knit: (function(inputFile, encoding) {
   rmarkdown::render(inputFile,
