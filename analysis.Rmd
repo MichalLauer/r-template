@@ -1,5 +1,6 @@
 ---
-title: "Vliv virtuality na výkonnost týmu"
+title: "Title"
+subtitle: "Subtitle"
 author: "Michal Lauer"
 date: "`r format(Sys.time(), format = '%d. %m. %Y')`"
 output:
@@ -20,7 +21,7 @@ knit: (function(inputFile, encoding) {
                     encoding = encoding,
                     output_dir = "output/")})
 ---
-```{r include=F}
+```{r setup, include=F}
 # Environment preparation
 cat('\f')
 rm(list = ls())
@@ -51,7 +52,7 @@ gtsummary::set_gtsummary_theme(list(
 ...
 
 ```{r include=F}
-# TODO: Prezentace
+
 ```
 
 # Libraries
@@ -61,3 +62,5 @@ This block loads all libraries.
 ```{r libs, message=F, warning=F}
 
 ```
+
+# References
