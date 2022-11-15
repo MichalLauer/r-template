@@ -8,10 +8,12 @@ output:
     theme: paper
     css: "assets/css/style.css"
     df_print: kable
+    # https://eranraviv.com/syntax-highlighting-style-in-rmarkdown/
     highlight: zenburn
     code_folding: hide
-	toc: true
+    toc: true
     toc_float: true
+# https://inbo.github.io/tutorials/tutorials/r_citations_markdown/
 bibliography: "bib/references.bib"
 csl: "bib/iso690-author-date-cs.csl"
 editor_options: 
